@@ -1,5 +1,6 @@
 a = '123'
 print(list(a))
+print(len(a))
 
 
 def compareAtoB(a, b):
