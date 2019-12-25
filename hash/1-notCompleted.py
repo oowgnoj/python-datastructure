@@ -36,13 +36,10 @@ def solution(participant, completion):
     for i in range(0, len(completion)):
         if(completion[i] in copyParticipant):
             copyParticipant.remove(completion[i])
-    print(copyParticipant)
-
     return copyParticipant[0]
 
 
 # 참고답안
-
 
 def solution(participant, completion):
     answer = collections.Counter(participant) - collections.Counter(completion)
