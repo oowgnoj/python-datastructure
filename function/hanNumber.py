@@ -13,20 +13,14 @@ def isArithmeticSeq(num):
     return True
 
 
-def hanNumber(num):
-    number = 0
-    if len(str(num)) <= 2:
-        print(num)
-    else:
-        for i in range(1, num + 1):
-            if isArithmeticSeq(i):
-                number = number + 1
-            else:
-                continue
-        print(number)
-
-
-hanNumber(110)
-hanNumber(1)
-hanNumber(210)
-hanNumber(1000)
+num = int(input())
+number = 0
+if(len(str(num))) <= 2:
+    print(num)
+else:
+    for i in range(1, num + 1):
+        if isArithmeticSeq(i):
+            number = number + 1
+        else:
+            continue
+    print(number)
